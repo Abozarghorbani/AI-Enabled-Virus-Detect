@@ -1,1 +1,16 @@
-Abstract: The rapid and accurate detection of viruses and the discovery of single nucleotide polymorphisms (SNPs) are crucial for disease management and understanding viral evolution. In this study, a pipeline for virus detection, validation, and SNP discovery from next-generation sequencing (NGS) data is presented. By integrating state-of-the-art bioinformatics tools with ar-tificial intelligence, the pipeline processes raw sequencing data to identify viral sequences with high accuracy and sensitivity. Before aligning the reads to the reference genomes, quality control measures and adapter trimming are performed to ensure the integrity of the data. Unmapped reads are subjected to de novo assembly to reveal novel viral sequences and genetic elements. The effectiveness of the pipeline is demonstrated by the identification of virus sequences, illustrating its potential for the detection of known and emerging pathogens. SNP discovery is performed using a custom Python script that compares the entire population of sequenced viral reads to a reference genome. This approach provides a comprehensive overview of viral genetic diversity and identifies dominant variants and a spectrum of genetic variations. The robustness of the pipeline is confirmed by the recovery of complete viral sequences, which improves our under-standing of viral genomics. This study highlights the synergy between traditional bioinformatics techniques and modern approaches, providing a robust tool for analyzing viral genomes and contributing to the broader field of viral genomics.
+Table 1. Software tools used in the Python script. This table summarizes the software tools used in the script, indicating whether they need separate installation or are readily available. 
+Tools	Need to Install	Description
+cutadapt	Yes	Trims adapter sequences from Illumina reads.
+gzip	Likely Installed	Compresses and decompresses files.
+samtools	Yes	Manipulates alignments in SAM/BAM format.
+subprocess	Built-in	Python module to run external commands.
+os	Built-in	Python module for interacting with the operating system.
+random	Built-in	Python module for generating random numbers.
+MegaHit	Yes	Performs de novo assembly of sequencing reads.
+Biopython	Yes	(Biopython: refers to a collection of Python tools for biological analysis)
+pandas	Yes	Used for data manipulation and analysis.
+NCBI-Blastn/NCBIBlastx	Yes	Performs nucleotide or protein similarity searches.
+Entrez	Likely Installed	Part of Biopython for Entrez database access.
+SeqIO	Likely Installed	Part of Biopython for sequence input/output.
+pysam	Yes	For manipulating alignments in SAM/BAM format.
+Counter	Built-in	Python module for creating collections of key-value pairs.
