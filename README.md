@@ -14,3 +14,5 @@ Entrez	Likely Installed	Part of Biopython for Entrez database access.
 SeqIO	Likely Installed	Part of Biopython for sequence input/output.
 pysam	Yes	For manipulating alignments in SAM/BAM format.
 Counter	Built-in	Python module for creating collections of key-value pairs.
+
+http://dx.doi.org/10.3389/fgene.2024.1492752
